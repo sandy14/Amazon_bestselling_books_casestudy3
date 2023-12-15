@@ -69,7 +69,8 @@ str(books)
          # High  price   = price between 20 to 30 dollar
          # Very high price = price more than 30 dollar
 
-# Reviews : Very low Reviews = Reviews less than 3000,
+
+#Reviews    very low review   < than 3000
         #   Low Reviews       = Reviews between  3000 to  7000
         #   Good Reviews     = reviews between 7000 to 15000
         #   Very good reviews = Reviews between 15000 to 30000
@@ -113,9 +114,9 @@ summary_yearly <- books%>%
 View(summary_yearly)
 
 #creating visualization#
-# Rating percent to further do pie chart#
 
-#Rating_percentage <- Rating %>%
+
+#Calculating % for rating to create pei chart#
   
 Rating_percent <- Rating%>%
   count(Rating_category)%>%
