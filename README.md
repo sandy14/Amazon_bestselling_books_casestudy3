@@ -209,10 +209,19 @@ view(Rating_percent)
 
 #Insights#
 1.Average price of best selling books has come down from 2009 to 2019.
+
+
 2.Average Rating is almost same.
+
 3.Average Reviews has been increased in recent years ,which proves people are more aware about Rewies given on amazon platform and using it to make decision to buy books.
+
+
 4.Among all books low price are contributing for 46% whereas 12 % are high price and ,in marketing plan some bundle pack could be introducd to increase sales of high price books .
+
+
 5.In all the books, 71 % books have outstanding reviews.Keeping similar kind of book with similar pricing will be helpful i selling books.
+
+
 6.Book reviews are mostly mixed ,further investigation could be done on this.
   
   
