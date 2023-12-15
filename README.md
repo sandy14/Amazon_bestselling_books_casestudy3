@@ -172,7 +172,7 @@ view(Rating_percent)
     mutate(Percentage= scales::percent((n/sum(n))))
   
   
-  #Creating Pei chart for Reviews categories#
+  #Creating Pie chart for Reviews categories#
   
   ggplot(Review_percent,aes(x="",y=Percentage,fill=Review_category))+
     geom_bar(stat = "identity",width = 1)+
@@ -186,6 +186,38 @@ view(Rating_percent)
           plot.title = element_text(hjust = 0.5, size=14, face = "bold"),
           axis.text.x = element_blank())+
     geom_text(aes(label = Percentage),position = position_stack(vjust = 0.5))
+
+
+#Creating bart chart for Avg_Price by year#
+ 
+  
+  
+  ggplot(summary_yearly,aes(x=as.factor(Year),y=Avg_price))+geom_bar(stat="identity",fill="blue")+
+    labs(title="Avg_Price changes by Year",x="year",y="Avg_price")
+  
+  
+#Creating bart chart for Avg_Rating by year#
+  
+  ggplot(summary_yearly,aes(x=as.factor(Year),y=Avg_rating))+geom_bar(stat="identity",fill="blue")+
+    labs(title="Avg_Rating changes by year", x="Year",y="Avg_rating")
+
+    
+#Creating bart chart for Avg_Reviews by year#
+  
+  ggplot(summary_yearly,aes(x=as.factor(Year),y=Avg_Reviews))+geom_bar(stat="identity",fill="blue")+
+    labs(title="Avg_Reviews changes by year", x="Year",y="Avg_Reviews")
+
+#Insights#
+1.Average price of best selling books has come down from 2009 to 2019.
+2.Average Rating is almost same.
+3.Average Reviews has been increased in recent years ,which proves people are more aware about Rewies given on amazon platform and using it to make decision to buy books.
+4.Among all books low price are contributing for 46% whereas 12 % are high price and ,in marketing plan some bundle pack could be introducd to increase sales of high price books .
+5.In all the books, 71 % books have outstanding reviews.Keeping similar kind of book with similar pricing will be helpful i selling books.
+6.Book reviews are mostly mixed ,further investigation could be done on this.
+  
+  
+  
+  
   
   
 
